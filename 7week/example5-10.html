@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse; /*2중선이 아닌 선 1개만 겹치는 거 없음*/
+        }
+        td, th {
+            text-align: center;
+            padding: 5px;
+            height: 15px;
+            width: 100px;
+        }
+        thead, tfoot {
+            background-color: darkgray;
+            color: yellow;
+        }
+        /*중요*/
+        tbody tr:nth-child(even){
+            background-color: lightblue;
+        }
+        tbody tr:hover {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h3>1학기 성적</h3>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>HTML</th>
+                <th>CSS</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>합계</th>
+                <th>310</th>
+                <th>249</th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>황기태</td>
+                <td>80</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>이병은</td>
+                <td>95</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td>박병은</td>
+                <td>50</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td>김보윤</td>
+                <td>80</td>
+                <td>40</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

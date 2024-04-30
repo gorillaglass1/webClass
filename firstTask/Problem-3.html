@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:hover 활용</title>
+    <style>
+        .cardContainer {
+            display: flex;
+            align-items: center;
+        }
+        .cardText {
+            margin-right: 10px; 
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .cardFront {
+            display: none;
+        }
+        .cardContainer:hover .cardBack {
+            display: none;
+        }
+        .cardContainer:hover .cardFront {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h3>:hover 활용</h3>
+    <hr>
+    <div class="cardContainer">
+        <p class="cardText">마우스를 올리면 카드의 앞면이 보인다.</p>
+        <div>
+            <img class="cardBack" src="media/cardBack.png" alt="뒷면" width="120" height="200">
+            <img class="cardFront" src="media/joker.png" alt="앞면" width="120" height="200">
+        </div>
+    </div>
+</body>
+</html>
