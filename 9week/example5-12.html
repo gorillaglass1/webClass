@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* @keyframes bomb { 
+            from {font-size: 100%;}
+            to {font-size: 500%;}
+        }
+        h3 {
+            animation-name: bomb; 
+            animation-duration: 2s;
+            animation-iteration-count: 3; 
+        } */
+        h3 {
+            transition: font-size 5s;
+        }
+        h3:hover {
+            font-size: 500%;
+        }
+    </style>
+</head>
+<body>
+    <h3>꽝1</h3>
+    <hr>
+    <p>꽝! 글자가 3초동안 500%에서 시작하여 
+        100%로(100%에서 500%으로) 바뀌는 애니메이션입니다.<br>
+        무한 반복합니다.
+    </p>
+</body>
+</html>
