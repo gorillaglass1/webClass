@@ -14,9 +14,11 @@
     <script>
         for(let i = 2; i <= 9; i+2) {
                 document.write("--"+i+"단-- <br>");
-                for(let k = 1; k <= 9; k++) {
-                    document.write(`${j}x${k} = ${(j*k < 10) ? "&nbsp;" + (j*k) : (j*k)}<&nbsp;&nbsp;>`);
-                    document.write(`${j}x${k} = ${(j*k < 10) ? "&nbsp;" + (j*k) : (j*k)};
+                for(let j = 1; j <= 9; j++) {
+                    document.write(`${i} x ${j} = ${i*j<10 ? "&nbsp;" : ""}${i*j}  `);
+                }
+                for(let k = 1; k <= 9; k++){
+                    document.write(`${i+1} x ${k} = ${(i+1)*k<10 ? "&nbsp;" : ""}${(i+1)*k}`);
                 }
                 document.write("<br><br>");
             }
