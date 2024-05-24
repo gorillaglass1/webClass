@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 만들기</title>
+</head>
+<body>
+    <h3>[]로 배열 만들기</h3>
+    <hr>
+    <script>
+        let plot = [20, 5, 8, 15, 20];
+        document.write("let plet = [20, 5, 8, 15, 20]<br>");
+
+        for(let i = 0; i < plot.length; i++) {
+            // let size = plot[i];
+            // while (size > 0) {
+            //     document.write("*");
+            //     size--;
+            // }
+            for(let size = plot[i]; size > 0; size--) {
+                document.write("*");
+            }
+            document.write(plot[i] + "<br>");
+        }
+    </script>
+</body>
+</html>

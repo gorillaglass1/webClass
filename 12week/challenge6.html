@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function printStar(input) {
+            for(let i = 0; i < input; i++) {
+                for(let j = 0; j <= i; j++) {
+                    document.write("*");
+                }
+                document.write("<br>");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>별 찍기</h3>
+    <hr>
+    <script>
+        let num = prompt("별 찍기 행을 입력하세요", "5");
+        let input = parseInt(num);
+        printStar(input);
+    </script>
+</body>
+</html>
