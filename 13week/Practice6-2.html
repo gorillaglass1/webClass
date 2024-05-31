@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .star {
+            margin: 10px;
+            padding: 5px;
+            border: 1px solid yellowgreen;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <h3>별 문자 출력하기</h3>
+    <hr>
+    <div class="star">
+        <script>
+            let input = parseInt(prompt("별의 행의 갯수 입력", ""));
+            // for(let i = 1; i <= input; i++) {
+            //     for(let j = 1; j <= i; j++) {
+            //         document.write("*");
+            //     }
+            //     document.write("<br>");
+            // }
+
+            let star1="";
+            for(let i = 0; i<input; i++) {
+                star1 += "*";
+                document.write(star1 + "<br>");
+            }
+            document.write("<br><br>");
+
+            for(let i = input; i > 0; i--) {
+                document.write("*".repeat(i) + "<br>");
+            }
+        </script>
+    </div>
+    <div class="star">
+        <script>
+            for(let i = 0; i < input; i++) {
+                let star3 = "";
+                for(let j = 0; j < input; j++) {
+                    if (j < i) {
+                        star3 += "&nbsp;";
+                    } else {
+                        star3 += "*";
+                    }
+                }
+                document.write(star3 + "<br>");
+            }
+
+            document.write("<br><br>");
+
+            for(let i = 0; i < input; i++) {
+                let star4 = "";
+                for(let j = 0; j < input; j++) {
+                    if (j < input-i-1) {
+                        star4 += "&nbsp;";
+                    } else {
+                        star4 += "*";
+                    }
+                }
+                document.write(star4 + "<br>");
+            }
+        </script>
+    </div>
+    
+    <div class="star">
+        <script>
+            document.write("<br>");
+            for(let i = 0; i < input; i++) {
+                let star5 = "";
+                for(let j = 0; j<input-i-1; j++) {
+                    star5 += "&nbsp;";
+                }
+                for(let k = 0; k < 2*i+1; k++) {
+                    star5 += "*";
+                }
+                document.write(star5 + "<br>")
+            }
+        </script>
+    </div>
+</body>
+</html>
